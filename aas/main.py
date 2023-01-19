@@ -1,2 +1,3 @@
 # namayesh yek string
-print("hello word")
+y = "John"
+print(type(y))
