@@ -1,3 +1,4 @@
 # namayesh yek string
 y = "John"
-print(type(y))
+a=10
+print(y+str(a))
