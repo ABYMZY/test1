@@ -1,3 +1,2 @@
-print("step1")
-
-print("step4")
+# namayesh yek string
+print("hello word")
