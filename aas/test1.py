@@ -1,6 +1,6 @@
-x = "awesome"
-def myfunc():
- x = "fantastic"
- print("Python is " + x)
-myfunc()
-print("Python is " + x)
+thisdict = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+print(thisdict)
