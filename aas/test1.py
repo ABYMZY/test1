@@ -1,10 +1,14 @@
-try:
-  f = open("test.txt")
-  try:
-   f.write("Lorum Ipsum")
-  except:
-   print("Something went wrong when writing to the file")
-  finally:
-   f.close()
-except:
- print("Something went wrong when opening the file")
+import json
+x = {
+"name": "John",
+"age": 30,
+"married": True,
+"divorced": False,
+"children": ("Ann","Billy"),
+"pets": None,
+"cars": [
+{"model": "BMW 230", "mpg": 27.5},
+{"model": "Ford Edge", "mpg": 24.1}
+]
+}
+print(json.dumps(x))
