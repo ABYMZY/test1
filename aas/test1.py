@@ -1,14 +1,13 @@
-class Person:
-  def __init__(self, fname, lname):
-   self.firstname = fname
-   self.lastname = lname
-  def printname(self):
-   print(self.firstname, self.lastname)
-x = Person("John", "Doe")
-x.printname()
+f = open("test.txt", "w+")
+f.write("1Now the file has more content!\n")
+f.write("2Now the file has more content!\n")
+f.write("3Now the file has more content!\n")
+f.write("4Now the file has more content!\n")
+f.write("5Now the file has more content!\n")
+f.write("6Now the file has more content!\n")
+f.write("7Now the file has more content!")
 
-
-class Student(Person):
-  pass
-x = Student("Mike", "Olsen")
-x.printname()
+with open('test.txt', "r") as f:
+    lines = [line.rstrip() for line in f]
+[print(i) for i in lines]
+# print(f.read())
